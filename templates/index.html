@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="">
   </head>
   <body>
-    <h1 class="homeHeader" id="homeHeader">Welcome to your family's </h1>
+    <h1 class="homeHeader" id="homeHeader">Welcome to your family's site!</h1>
 
     <div class="loginContainer" id="loginContainer">
       <div class="inputContainer" id="inputContainer">
@@ -26,9 +26,13 @@
 
     <div class="signinContainer" id="signinContainer">
       <a href=""><p>Already a member?</p></a>
-
     </div>
     
-    <script src="" async defer></script>
+    <div class="container">
+      <main>
+        {% block main%}
+        {% endblock %}
+      </main>
+    </div>
   </body>
 </html>
