@@ -1,0 +1,279 @@
+/*colours
+  light grey #e4e3df
+  light green #e9f5db
+  light sand #dad4a8
+  medium olive #cfe1b9
+  green #488e40
+  dark grey #333533
+  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.85rem;
+}
+
+body {
+  margin: auto;
+  width: 80%;
+  height: 100vh;
+  background: #e9f5db;
+  font-family: 'Alexandria', sans-serif;
+}
+
+h1 {
+  font-family: 'Alexandria', sans-serif;
+  color: #333533;
+}
+
+
+
+p {
+  font-size: 1.5em;
+}
+
+
+.headerContainer {
+  background-color: #488e40;
+  border-bottom: #dad4a8 2px solid;
+}
+
+.homeHeader {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 30px 0;
+  color: #dad4a8;
+  letter-spacing: .1em;
+}
+
+.welcomeHeader {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  border-radius: black  1px solid;
+}
+
+.welcomeContainer {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  border-radius: black  1px solid;
+  padding: 30px;
+  background-color: #cfe1b9;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e9f5db;
+  padding: 10px 0 10px 0;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dad4a8;
+  width: 40%;
+  height: 200px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-family: 'Alexandria', sans-serif;
+  opacity: .9;
+}
+
+.phoenix {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: default;
+}
+
+.phoenixReviewContainer {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.phoenixForm {
+  margin: 10px;
+}
+
+footer {
+  background-color: #488e40;
+  height: 20%;
+  color: #dad4a8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.2em;
+}
+
+.contact a {
+  color: #dad4a8;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.social a {
+  color: #dad4a8;
+  cursor: pointer;
+}
+
+.social a:hover {
+  color: #333533;
+}
+
+/*PHOENIX PARK*/
+
+.aboutPhoenixPark {
+  background-color: #cfe1b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333533;
+  display: flex;
+  flex-direction: column;
+}
+
+.phoenixSubHeader {
+  padding: 20px;
+  font-size: 1.3em;
+  letter-spacing: .5em;
+}
+
+/*.aboutPhoenix {
+  display: none;
+} */
+
+.aboutPhoenix {
+  display: flex;
+  background-color: #dad4a8;
+  color: #488e40;
+  font-size: .8em;
+  letter-spacing: .25em;
+  word-spacing: .5em;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: opacity 1000ms ease;
+  margin-bottom: 10px;
+}
+
+.aboutPhoenixPark a {
+  cursor: pointer;
+}
+
+.aboutPhoenixPark a:visited {
+  color:#333533;
+}
+
+.aboutPhoenixPark a:hover {
+  letter-spacing: .8em;
+  transition-duration: 1000ms;
+}
+
+.pageBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.homeButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeButton {
+  
+}
+
+.phoenixGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.phoenixImgGroup1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.phoenixImgGroup2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.phoenixImg {
+  margin: 20px 0;
+  border:#488e40 2px solid;
+  border-radius: 20px;
+}
+
+.backToHome {
+  width: 100px;
+  background-color: #dad4a8;
+  border: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top: #488e40 3px solid;
+}
+
+.nextButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.toDodder {
+  width: 100px;
+  background-color: #dad4a8;
+  border: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom: #488e40 3px solid;
+  margin: 20px 0;
+}
+
+.toBull {
+  width: 100px;
+  background-color: #dad4a8;
+  border: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom: #488e40 3px solid;
+  margin: 20px 0;
+}
+
+.toPhoenix {
+  width: 100px;
+  background-color: #dad4a8;
+  border: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom: #488e40 3px solid;
+  margin: 20px 0;
+}

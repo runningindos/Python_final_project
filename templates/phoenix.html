@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Parks</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100&family=Gruppo&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="headerContainer">
+      <h1 class="homeHeader" id="homeHeader">Buddy's Top 3 Parks in Dublin City!</h1>
+    </div>
+
+    <div class="aboutPhoenixPark" id="aboutPhoenixPark">
+      <div class="phoenixSubHeader">
+        <a type="button" class="phoenixParkExpander" id="phoenixParkExpander" href=""         onclick="showAboutPhoenixDiv()">
+          <div>
+            <h3>First Place: Phoenix Park</h3>
+          </div>
+        </a>
+      </div>
+    </div>  
+
+      <!--hidden div showing PP description. Opens on click of h3 above-->
+    <div>
+      <div class="aboutPhoenix" id="aboutPhoenix" style="display: none;">
+        <p class="aboutPhoenixText" id="aboutPhoenixText">
+          Phoenix Park is a large urban park located in the heart of Dublin, Ireland. It is one of the largest enclosed recreational spaces within any European capital city and covers an impressive 1,750 acres (707 hectares). The park is located about 2 to 4 kilometers west of the city center, making it easily accessible for both locals and tourists.
+          <br>
+          <br>
+          Visitors to Phoenix Park can enjoy a mix of natural beauty, historical significance, and recreational opportunities, making it a must-visit destination for both locals and tourists in Dublin.
+        </p>
+      </div>
+    </div>
+
+    <div class="pageBody">
+
+      <div class="homeButtonContainer">
+        <a href="index.html" class="homeButton">
+          <button class="backToHome">Home</button>
+        </a>
+      </div>
+
+      <div class="phoenixGallery">
+        <div class="phoenixImgGroup1"></div>
+          <img class="phoenixImg" src="../static/images/phoenix2.jpg" alt="">
+          <img class="phoenixImg" src="../static/images/phoenix4.jpg" alt="">
+        </div>
+
+        <div class="phoenixImgGroup2">
+          <img class="phoenixImg" src="../static/images/phoenix6.jpg" alt="">
+          <img class="phoenixImg" src="../static/images/phoenix8.jpg" alt="">
+        </div>
+
+        <div class="nextButtonContainer" id="nextButtonContainer">
+          <a href="" class="nextButton">
+            <button class="toDodder">Dodder</button>
+          </a>
+
+          <a href="" class="nextButton">
+            <button class="toBull">Bull</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="phoenixReviewContainer" id="phoenixReviewContainer">
+      
+        <form class="phoenixForm" action="#" method="post">
+          <label for="">Been here? What did you think?</label>
+          <p><input type="text" name="rev" /></p>
+          <button type="button" class="phoenixRevBtn" id="phoenixRevBtn">Leave Review</button>
+        </form> 
+
+      </div>
+
+    </div>
+    <footer class="footer" id="footer">
+
+      <div class="copywrite">&copy; Ricky Harrison</div>
+
+      <div class="contact">
+        <a href="mailto:ricky@ricky.com">Have a question?</a>
+      </div>
+
+      <div class="social" id="social">
+        <a href="instagram.com">Insta</a>
+        <a href="twitter">Twitter</a>
+      </div>
+
+    </footer>
+    <script src="../static/js/script.js"></script>
+  </body>

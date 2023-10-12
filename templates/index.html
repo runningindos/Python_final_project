@@ -4,35 +4,62 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login/Sign Up</title>
+    <title>Parks</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100&family=Gruppo&family=Quattrocento+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1 class="homeHeader" id="homeHeader">Welcome to your family's site!</h1>
 
-    <div class="loginContainer" id="loginContainer">
-      <div class="inputContainer" id="inputContainer">
-        <input type="" class="nameInput" id="nameInput">
-        <label for="name">Name</label>
-        <input type="email" class="emailContainer" id="emailContainer">
-        <label for="email">Email</label>
-      </div>
-      <div class="loginSubmitBtn" id="loginSubmitBtn">
-        <button>Let's Go!</button>
-      </div>
+    <!--header-->
+
+    <div class="headerContainer">
+      <h1 class="homeHeader" id="homeHeader">Buddy's Top 3 Parks in Dublin City!</h1>
     </div>
 
-    <div class="signinContainer" id="signinContainer">
-      <a href=""><p>Already a member?</p></a>
+    <!--subheader-->
+
+    <div class="welcomeContainer" id="welcomeContainer">
+      <h1 class="welcomeHeader" id="welcomeHeader">
+        Explore a few Dublin parks through Buddy's eyes!
+      </h1>
     </div>
-    
-    <div class="container">
-      <main>
-        {% block main%}
-        {% endblock %}
-      </main>
+
+    <!--main body pages with navigation buttons and park images-->
+
+    <div class="navContainer" id="navContainer">
+      <a href="phoenix.html">
+        <button class="navButton" class="phoenix">Phoenix Park</button>
+      </a>
+
+      <a href="dodder.html">
+        <button class="navButton" class="dodder">Dodder Valley Park</button>
+        </button>
+      </a>
+
+      <a href="bull.html">
+        <button class="navButton" class="bullIsland">Bull Island</button>
+      </a>
     </div>
+
+    <footer class="footer" id="footer">
+
+      <div class="copywrite">&copy; Ricky Harrison</div>
+
+      <div class="contact">
+        <a href="mailto:ricky@ricky.com">Have a question?</a>
+      </div>
+
+      <div class="social" id="social">
+        <a href="instagram.com">Insta</a>
+        <a href="twitter">Twitter</a>
+      </div>
+
+    </footer>
+    <script src="../static/js/script.js"></script>
   </body>
 </html>

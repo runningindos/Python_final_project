@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -6,21 +6,28 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/login")
+@app.route("/phoenix")
 def login():
-    return render_template("login.html")
+    return render_template("phoenix.html")
 
-@app.route("/message_board.html")
+@app.route("/phoenix", methods=["POST", "GET"])
+def form():
+    message = None
+    if request.method == "POST":
+        name = request.form["rev"]
+        # Process the form data as needed
+
+        # Set the message to be displayed below the form
+        message = f'Thank you for your review, {name}!'
+    return render_template("phoenix.html", message=message)
+
+@app.route("/dodder")
 def message_board():
-    return render_template("message_board.html")
+    return render_template("dodder.html")
 
-@app.route("/photos")
+@app.route("/bull")
 def photos():
-    return render_template("photos.html")
-
-@app.route("/contact")
-def contact():
-    return render_template("contact.html")
+    return render_template("bull.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
