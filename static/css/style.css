@@ -106,8 +106,10 @@ a {
 }
 
 .phoenixForm {
-  margin: 10px;
+
 }
+
+
 
 footer {
   background-color: #488e40;
@@ -276,4 +278,192 @@ footer {
   border-bottom-right-radius: 50px;
   border-bottom: #488e40 3px solid;
   margin: 20px 0;
+}
+
+.phoenixReviewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  margin: 20px 0 30px 0;
+  width: 100%;
+  border: none;
+  border-bottom: #488e40 2px solid;
+  background-color: #e9f5db;
+  color: #333533;
+}
+
+.phoenixRevBtn {
+  border: #488e40 2px solid;
+  background-color: #dad4a8;
+  width: 100%;
+  border-radius: 20px;
+  
+}
+
+/*DODDER VALLEY PARK*/
+
+.aboutPhoenixPark {
+  background-color: #cfe1b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333533;
+  display: flex;
+  flex-direction: column;
+}
+
+.phoenixSubHeader {
+  padding: 20px;
+  font-size: 1.3em;
+  letter-spacing: .5em;
+}
+
+/*.aboutPhoenix {
+  display: none;
+} */
+
+.aboutDodder {
+  display: flex;
+  background-color: #dad4a8;
+  color: #488e40;
+  font-size: .8em;
+  letter-spacing: .25em;
+  word-spacing: .5em;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: opacity 1000ms ease;
+  margin-bottom: 10px;
+}
+
+.aboutDodder a {
+  cursor: pointer;
+}
+
+.aboutDodder a:visited {
+  color:#333533;
+}
+
+.aboutDodder a:hover {
+  letter-spacing: .8em;
+  transition-duration: 1000ms;
+}
+
+.pageBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.homeButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeButton {
+  
+}
+
+.dodderGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dodderImgGroup1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dodderImgGroup2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dodderImg {
+  margin: 20px 0;
+  border:#488e40 2px solid;
+  border-radius: 20px;
+}
+
+/*Bull Island*/
+
+.aboutBull {
+  display: flex;
+  background-color: #dad4a8;
+  color: #488e40;
+  font-size: .8em;
+  letter-spacing: .25em;
+  word-spacing: .5em;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: opacity 1000ms ease;
+  margin-bottom: 10px;
+}
+
+.aboutBull a {
+  cursor: pointer;
+}
+
+.aboutBull a:visited {
+  color:#333533;
+}
+
+.aboutBull a:hover {
+  letter-spacing: .8em;
+  transition-duration: 1000ms;
+}
+
+.pageBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.homeButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeButton {
+  
+}
+
+.bullGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bullImgGroup1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bullImgGroup2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bullImg {
+  margin: 20px 0;
+  border:#488e40 2px solid;
+  border-radius: 20px;
 }

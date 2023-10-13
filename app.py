@@ -15,10 +15,8 @@ def form():
     message = None
     if request.method == "POST":
         name = request.form["rev"]
-        # Process the form data as needed
 
         # Set the message to be displayed below the form
-        message = f'Thank you for your review, {name}!'
     return render_template("phoenix.html", message=message)
 
 @app.route("/dodder")

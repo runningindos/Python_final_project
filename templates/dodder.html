@@ -1,4 +1,4 @@
-
+{% extends 'base.html' %}
 <!DOCTYPE html>
 
 <html>
@@ -23,7 +23,7 @@
       <div class="phoenixSubHeader">
         <a type="button" class="phoenixParkExpander" id="phoenixParkExpander" href=""         onclick="showAboutPhoenixDiv()">
           <div>
-            <h3>First Place: Phoenix Park</h3>
+            <h3>Second Place: Dodder Valley Park</h3>
           </div>
         </a>
       </div>
@@ -31,12 +31,12 @@
 
       <!--hidden div showing PP description. Opens on click of h3 above-->
     <div>
-      <div class="aboutPhoenix" id="aboutPhoenix" style="display: none;">
-        <p class="aboutPhoenixText" id="aboutPhoenixText">
-          Phoenix Park is a large urban park located in the heart of Dublin, Ireland. It is one of the largest enclosed recreational spaces within any European capital city and covers an impressive 1,750 acres (707 hectares). The park is located about 2 to 4 kilometers west of the city center, making it easily accessible for both locals and tourists.
+      <div class="aboutDodder" id="aboutDodder" style="display: none;">
+        <p class="aboutDodderText" id="aboutDodderText">
+          Dodder Valley Park is a public park situated along the Dodder River, offering a serene and green environment for recreational activities and relaxation. The long park feature walking and cycling paths, picnic areas, playgrounds, sports pitches, BMX course, hilltop view of the surrounding neighbourhoods, and natural landscapes.
           <br>
           <br>
-          Visitors to Phoenix Park can enjoy a mix of natural beauty, historical significance, and recreational opportunities, making it a must-visit destination for both locals and tourists in Dublin.
+          Much work has gone into making this park a beautiful space for residents and visitors. If you're looking for a nice park to spend a few hours. This Dublin City South park will have everything you need to stay entertained.
         </p>
       </div>
     </div>
@@ -49,24 +49,24 @@
         </a>
       </div>
 
-      <div class="phoenixGallery">
-        <div class="phoenixImgGroup1"></div>
-          <img class="phoenixImg" src="../static/images/phoenix2.jpg" alt="">
-          <img class="phoenixImg" src="../static/images/phoenix4.jpg" alt="">
+      <div class="dodderGallery">
+        <div class="dodderImgGroup1"></div>
+          <img class="dodderImg" src="../static/images/dodder1.jpg" alt="">
+          <img class="dodderImg" src="../static/images/dodder2.jpg" alt="">
         </div>
 
-        <div class="phoenixImgGroup2">
-          <img class="phoenixImg" src="../static/images/phoenix6.jpg" alt="">
-          <img class="phoenixImg" src="../static/images/phoenix8.jpg" alt="">
+        <div class="dodderImgGroup2">
+          <img class="dodderImg" src="../static/images/dodder3.jpg" alt="">
+          <img class="dodderImg" src="../static/images/dodder4.jpg" alt="">
         </div>
 
         <div class="nextButtonContainer" id="nextButtonContainer">
-          <a href="dodder.html" class="nextButton">
-            <button class="toDodder">Dodder</button>
-          </a>
-
           <a href="bull.html" class="nextButton">
             <button class="toBull">Bull</button>
+          </a>
+
+          <a href="phoenix.html" class="nextButton">
+            <button class="toPhoenix">Phoenix</button>
           </a>
         </div>
       </div>
