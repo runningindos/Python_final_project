@@ -27,13 +27,6 @@ h1 {
   color: #333533;
 }
 
-
-
-p {
-  font-size: 1.5em;
-}
-
-
 .headerContainer {
   background-color: #488e40;
   border-bottom: #dad4a8 2px solid;
@@ -160,10 +153,6 @@ footer {
   letter-spacing: .5em;
 }
 
-/*.aboutPhoenix {
-  display: none;
-} */
-
 .aboutPhoenix {
   display: flex;
   background-color: #dad4a8;
@@ -201,10 +190,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.homeButton {
-  
 }
 
 .phoenixGallery {
@@ -306,7 +291,7 @@ input {
 
 /*DODDER VALLEY PARK*/
 
-.aboutPhoenixPark {
+.aboutDodderPark {
   background-color: #cfe1b9;
   display: flex;
   justify-content: center;
@@ -316,15 +301,24 @@ input {
   flex-direction: column;
 }
 
-.phoenixSubHeader {
+.dodderSubHeader {
   padding: 20px;
   font-size: 1.3em;
   letter-spacing: .5em;
 }
 
-/*.aboutPhoenix {
-  display: none;
-} */
+.aboutDodderPark a {
+  cursor: pointer;
+}
+
+.aboutDodderPark a:visited {
+  color:#333533;
+}
+
+.aboutDodderPark a:hover {
+  letter-spacing: .8em;
+  transition-duration: 1000ms;
+}
 
 .aboutDodder {
   display: flex;
@@ -340,19 +334,6 @@ input {
   margin-bottom: 10px;
 }
 
-.aboutDodder a {
-  cursor: pointer;
-}
-
-.aboutDodder a:visited {
-  color:#333533;
-}
-
-.aboutDodder a:hover {
-  letter-spacing: .8em;
-  transition-duration: 1000ms;
-}
-
 .pageBody {
   display: flex;
   flex-direction: row;
@@ -363,10 +344,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.homeButton {
-  
 }
 
 .dodderGallery {
@@ -467,3 +444,135 @@ input {
   border:#488e40 2px solid;
   border-radius: 20px;
 }
+
+/* START MEDIA QUERIES*/
+
+@media screen and (max-width: 1150px) {
+  
+  
+  body {
+    width: 100%;
+  }
+
+  .headerContainer {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .aboutPhoenixPark {
+    text-align: center;
+  }
+
+  .aboutDodderPark {
+    text-align: center;
+  }
+
+  .aboutPhoenixPark {
+    text-align: center;
+  }
+ 
+}
+
+/*MEDIA QUERY (MAX-WIDTH OF 940)*/
+
+@media screen and (max-width: 940px) {
+
+  body {
+    width: 100%;
+  }
+
+  .headerContainer {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .aboutPhoenixPark {
+    text-align: center;
+  }
+
+  .phoenixGallery{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .phoenixImgGroup1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .phoenixImgGroup2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .phoenixImg {
+    margin: 20px;
+  }
+
+  .nextButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .pageBody {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+}
+
+/*MEDIA QUERY (MAX-WIDTH OF 550)*/
+
+@media screen and (max-width: 550px) {
+
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: .8em;
+  }
+
+  .phoenixGallery{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phoenixImgGroup1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .phoenixImgGroup2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phoenixImg {
+    margin: 20px;
+  }
+
+  .nextButtonContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+}
+
+
+/*END MEDIA QUERIES*/
