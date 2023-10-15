@@ -7,7 +7,7 @@ def index():
     return render_template("index.html")
 
 @app.route("/phoenix")
-def login():
+def phoenix():
     return render_template("phoenix.html")
 
 @app.route("/phoenix", methods=["POST", "GET"])
@@ -20,11 +20,11 @@ def form():
     return render_template("phoenix.html", message=message)
 
 @app.route("/dodder")
-def message_board():
+def dodder():
     return render_template("dodder.html")
 
 @app.route("/bull")
-def photos():
+def bull():
     return render_template("bull.html")
 
 if __name__ == "__main__":
