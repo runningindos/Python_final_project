@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ def phoenix():
 @app.route("/phoenix", methods=["POST", "GET"])
 def form():
     message = None
-    if request.method == "POST":
+    if request.method == "GET":
         name = request.form["rev"]
 
         # Set the message to be displayed below the form
